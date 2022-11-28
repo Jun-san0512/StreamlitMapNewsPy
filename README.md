@@ -32,6 +32,7 @@ Streamlit map機能の応用。NHKのRSSから記事を取得後、地名を抽�
 
 <img width="818" alt="top_img02" src="https://user-images.githubusercontent.com/118791187/204228458-a42a2bde-f5ac-4d63-8e68-b8030d9ce899.PNG">
 
+↑記事へのジャンプ機能で[この記事](https://www3.nhk.or.jp/matsuyama-news/20221128/8000014600.html)へ移動
 
 ## ディスカッション
 
