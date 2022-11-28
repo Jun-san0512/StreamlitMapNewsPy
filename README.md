@@ -18,11 +18,11 @@ Streamlit map機能の応用。NHKのRSSから記事を取得後、地名を抽�
 
 3. 地図にプロット (できればリンクを張り付けたい)
 
+[Streamlitでstreamlit-foliumを使って地図に情報を表示してみよう](https://welovepython.net/streamlit-folium/)
+
 [folium 事始め - Qiita](https://qiita.com/pork_steak/items/f551fa09794831100faa)
 
-[Folium Map: How to Create a Table-Style Pop-up with HTML Code](https://towardsdatascience.com/folium-map-how-to-create-a-table-style-pop-up-with-html-code-76903706b88a)
-
-[Streamlitでstreamlit-foliumを使って地図に情報を表示してみよう](https://welovepython.net/streamlit-folium/)
+[マーカーのPopupにWebページのリンクの貼り付け、TwitterやYouTubeなどを埋め込む - よちよちpython]https://chayarokurokuro.hatenablog.com/entry/2021/08/04/070359
 
 ## 結果
 
