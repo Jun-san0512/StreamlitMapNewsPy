@@ -24,7 +24,7 @@ Streamlit map機能の応用。NHKのRSSから記事を取得後、地名を抽�
 
 [folium 事始め - Qiita](https://qiita.com/pork_steak/items/f551fa09794831100faa)
 
-[マーカーのPopupにWebページのリンクの貼り付け、TwitterやYouTubeなどを埋め込む - よちよちpython]https://chayarokurokuro.hatenablog.com/entry/2021/08/04/070359
+[マーカーのPopupにWebページのリンクの貼り付け、TwitterやYouTubeなどを埋め込む - よちよちpython](https://chayarokurokuro.hatenablog.com/entry/2021/08/04/070359)
 
 ## Usage
 
