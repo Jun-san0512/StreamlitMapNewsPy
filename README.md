@@ -12,6 +12,8 @@ Streamlit map機能の応用。NHKのRSSから記事を取得後、地名を抽�
 
 [NHKニュースのRSS (okumuralab.org)](https://okumuralab.org/~okumura/python/nhkrss.html)
 
+[コピペで使える都道府県一覧リスト・県庁所在地一覧 (start-point.net)](https://www.start-point.net/maps/tool/)
+
 2. 各市町村県の緯度経度を取得
 
 [地方公共団体の位置データ Location Data of Local Governments in Japan](https://amano-tec.com/data/localgovernments.html)
