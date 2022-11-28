@@ -26,6 +26,12 @@ Streamlit map機能の応用。NHKのRSSから記事を取得後、地名を抽�
 
 [マーカーのPopupにWebページのリンクの貼り付け、TwitterやYouTubeなどを埋め込む - よちよちpython]https://chayarokurokuro.hatenablog.com/entry/2021/08/04/070359
 
+## Usage
+
+`>> python article_to_json.py`
+
+`>> streamlit run json_to_map.py`
+
 ## 結果
 
 <img width="522" alt="img03" src="https://user-images.githubusercontent.com/118791187/204228414-b3cf46cb-d277-42b9-a7a5-0adbdfe55415.PNG">
