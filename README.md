@@ -4,37 +4,19 @@
 
 ## 概要
 
-Streamlit map機能の応用。ニュースAPIから地名を抽出して緯度経度に変換後、Streamlitのmapにプロットする。その際popupにリンク先を付与することで、元ニュース記事へのアクセスを簡略化した。
+Streamlit map機能の応用。NHKのRSSから記事を取得後、地名を抽出して緯度経度に変換してJSONに出力。そのJSONを読み込んで、Streamlitのmapにプロットする。popupにリンク先を付与することで、元ニュース記事へのアクセスを簡略化した。
 
-## 調査
+## 実装
 
 1. ニュース記事を取得
 
-→ どうにもうまくいかなさそうなので、RSS(もしくはTwitter)を使いましょう
-
 [NHKニュースのRSS (okumuralab.org)](https://okumuralab.org/~okumura/python/nhkrss.html)
 
-[RSS/RDFについて：朝日新聞デジタル (asahi.com)](https://www.asahi.com/information/service/rss.html)
-
-[RSSについて | 毎日新聞 (mainichi.jp)](https://mainichi.jp/rss/)
-
-[pythonでtwitter APIを利用してツイートを取得](https://python-man.club/python_twitter_api_tweet/#twitter_API)
-
- [](https://newsapi.org/)
-
-1. ニュースの文字列から地名を取得 (NER/固有表現抽出という言語処理の分野)
-
-[PyGeoNLP - Python版テキスト地名解析ツール | GeoNLP](https://geonlp.ex.nii.ac.jp/pygeonlp/)
-
-→ うまくいかなさそう…市町村一覧と緯度経度リストを使う
+2. 各市町村県の緯度経度を取得
 
 [地方公共団体の位置データ Location Data of Local Governments in Japan](https://amano-tec.com/data/localgovernments.html)
 
-1. 各市町村の緯度経度を取得
-
-[国土地理院APIで住所から緯度・経度を取得](https://elsammit-beginnerblg.hatenablog.com/entry/2021/07/11/122916#%E5%9B%BD%E5%9C%9F%E5%9C%B0%E7%90%86%E9%99%A2API%E3%81%A7%E4%BD%8F%E6%89%80%E3%81%8B%E3%82%89%E7%B7%AF%E5%BA%A6%E7%B5%8C%E5%BA%A6%E3%82%92%E5%8F%96%E5%BE%97)
-
-1. 地図にプロット (できればリンクを張り付けたい)
+3. 地図にプロット (できればリンクを張り付けたい)
 
 [folium 事始め - Qiita](https://qiita.com/pork_steak/items/f551fa09794831100faa)
 
@@ -53,11 +35,7 @@ Streamlit map機能の応用。ニュースAPIから地名を抽出して緯度�
 
 ## ディスカッション
 
-・Twitterで追うのもできそう (読売, 朝日, 毎日…)
-
-→ 今回はRSSからNHKの記事を拾ったが、Twitter APIから新聞等からも記事を拾うことができるか？
-
-・今回は記事から地名を探索したが、BERTとかを使ってNER(固有表現抽出)の方法をとるか？
+・今回は記事内容から地名を探索したが、BERTとかを使ってNER(固有表現抽出)の方法をとるか？
 
 → 要検討 ([リンク](https://www.intellilink.co.jp/column/ai/2022/022800.aspx))
 
